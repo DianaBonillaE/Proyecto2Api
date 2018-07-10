@@ -2708,13 +2708,11 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
         }
       },
-      "Microsoft.Win32.Registry/4.5.0-preview1-26216-02": {
+      "Microsoft.Win32.Registry/4.5.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0",
-          "System.Buffers": "4.5.0-preview1-26216-02",
-          "System.Security.AccessControl": "4.5.0-preview1-26216-02",
-          "System.Security.Principal.Windows": "4.5.0-preview1-26216-02"
+          "System.Security.AccessControl": "4.5.0",
+          "System.Security.Principal.Windows": "4.5.0"
         },
         "compile": {
           "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {}
@@ -2723,11 +2721,11 @@
           "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
         },
         "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp2.0/Microsoft.Win32.Registry.dll": {
+          "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
             "assetType": "runtime",
             "rid": "unix"
           },
-          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.Registry.dll": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -3352,28 +3350,26 @@
           "ref/netstandard1.3/System.Console.dll": {}
         }
       },
-      "System.Data.SqlClient/4.5.0-preview1-26216-02": {
+      "System.Data.SqlClient/4.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.Registry": "4.5.0-preview1-26216-02",
-          "System.Diagnostics.DiagnosticSource": "4.5.0-preview1-26216-02",
-          "System.Memory": "4.5.0-preview1-26216-02",
-          "System.Security.Principal.Windows": "4.5.0-preview1-26216-02",
-          "System.Text.Encoding.CodePages": "4.5.0-preview1-26216-02",
+          "Microsoft.Win32.Registry": "4.5.0",
+          "System.Security.Principal.Windows": "4.5.0",
+          "System.Text.Encoding.CodePages": "4.5.0",
           "runtime.native.System.Data.SqlClient.sni": "4.4.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Data.SqlClient.dll": {}
+          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Data.SqlClient.dll": {}
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {}
         },
         "runtimeTargets": {
-          "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
             "assetType": "runtime",
             "rid": "unix"
           },
-          "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll": {
+          "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -4020,13 +4016,13 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.0-preview1-26216-02": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Runtime.Extensions/4.3.0": {
@@ -4154,11 +4150,11 @@
           "lib/netstandard1.3/System.Runtime.Serialization.Xml.dll": {}
         }
       },
-      "System.Security.AccessControl/4.5.0-preview1-26216-02": {
+      "System.Security.AccessControl/4.5.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
-          "System.Security.Principal.Windows": "4.5.0-preview1-26216-02"
+          "System.Security.Principal.Windows": "4.5.0"
         },
         "compile": {
           "ref/netstandard2.0/System.Security.AccessControl.dll": {}
@@ -4430,7 +4426,7 @@
           "lib/netstandard1.0/System.Security.Principal.dll": {}
         }
       },
-      "System.Security.Principal.Windows/4.5.0-preview1-26216-02": {
+      "System.Security.Principal.Windows/4.5.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0"
@@ -4463,10 +4459,11 @@
           "ref/netstandard1.3/System.Text.Encoding.dll": {}
         }
       },
-      "System.Text.Encoding.CodePages/4.5.0-preview1-26216-02": {
+      "System.Text.Encoding.CodePages/4.5.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0"
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
         },
         "compile": {
           "ref/netstandard2.0/_._": {}
@@ -4764,6 +4761,9 @@
       "MechanicalLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "System.Data.SqlClient": "4.5.1"
+        },
         "compile": {
           "bin/placeholder/MechanicalLibrary.dll": {}
         },
@@ -7230,18 +7230,19 @@
         "microsoft.visualstudio.web.codegenerators.mvc.nuspec"
       ]
     },
-    "Microsoft.Win32.Registry/4.5.0-preview1-26216-02": {
-      "sha512": "mUV6C2rmDOqRgvBau/GbC3zJrN7BWnjvmexb71gGl39Vtarj1x7Ia4Pw62kScH4PfwgaUabF5K4pPwjwLJNVkQ==",
+    "Microsoft.Win32.Registry/4.5.0": {
+      "sha512": "vduxuHEqRgRrTE8wYG8Wxj/+6wwzddOmZzjKZx6rFMc/91aUBxI5etAFYxesoNaIja5NpgSTcnk6cN8BeYXf9A==",
       "type": "package",
-      "path": "microsoft.win32.registry/4.5.0-preview1-26216-02",
+      "path": "microsoft.win32.registry/4.5.0",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net46/Microsoft.Win32.Registry.dll",
         "lib/net461/Microsoft.Win32.Registry.dll",
         "lib/netstandard1.3/Microsoft.Win32.Registry.dll",
         "lib/netstandard2.0/Microsoft.Win32.Registry.dll",
-        "microsoft.win32.registry.4.5.0-preview1-26216-02.nupkg.sha512",
+        "microsoft.win32.registry.4.5.0.nupkg.sha512",
         "microsoft.win32.registry.nuspec",
         "ref/net46/Microsoft.Win32.Registry.dll",
         "ref/net461/Microsoft.Win32.Registry.dll",
@@ -7259,11 +7260,11 @@
         "ref/netstandard1.3/zh-hant/Microsoft.Win32.Registry.xml",
         "ref/netstandard2.0/Microsoft.Win32.Registry.dll",
         "ref/netstandard2.0/Microsoft.Win32.Registry.xml",
-        "runtimes/unix/lib/netcoreapp2.0/Microsoft.Win32.Registry.dll",
+        "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/net46/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/net461/Microsoft.Win32.Registry.dll",
-        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -8377,11 +8378,12 @@
         "system.console.nuspec"
       ]
     },
-    "System.Data.SqlClient/4.5.0-preview1-26216-02": {
-      "sha512": "yR2f63uEOlpq0ZwbZv6nVbwizDtaJfG/GMzzU04I4mvt25RlBOwfr0ff/+NTZfa168eO+tWNmM3ce8RHz4G1rA==",
+    "System.Data.SqlClient/4.5.1": {
+      "sha512": "qXTvTFkBds7bnN+ntBMHGvmH3pCAkfT4TE1z2Xvfqo4wKMQC77O4aXsYCc7dzCESC+/Gom6l0GLuebpFx7MDvg==",
       "type": "package",
-      "path": "system.data.sqlclient/4.5.0-preview1-26216-02",
+      "path": "system.data.sqlclient/4.5.1",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -8389,10 +8391,10 @@
         "lib/net451/System.Data.SqlClient.dll",
         "lib/net46/System.Data.SqlClient.dll",
         "lib/net461/System.Data.SqlClient.dll",
+        "lib/netcoreapp2.1/System.Data.SqlClient.dll",
         "lib/netstandard1.2/System.Data.SqlClient.dll",
         "lib/netstandard1.3/System.Data.SqlClient.dll",
         "lib/netstandard2.0/System.Data.SqlClient.dll",
-        "lib/uap10.0.16300/_._",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
@@ -8403,6 +8405,8 @@
         "ref/net46/System.Data.SqlClient.dll",
         "ref/net461/System.Data.SqlClient.dll",
         "ref/net461/System.Data.SqlClient.xml",
+        "ref/netcoreapp2.1/System.Data.SqlClient.dll",
+        "ref/netcoreapp2.1/System.Data.SqlClient.xml",
         "ref/netstandard1.2/System.Data.SqlClient.dll",
         "ref/netstandard1.2/System.Data.SqlClient.xml",
         "ref/netstandard1.2/de/System.Data.SqlClient.xml",
@@ -8427,20 +8431,21 @@
         "ref/netstandard1.3/zh-hant/System.Data.SqlClient.xml",
         "ref/netstandard2.0/System.Data.SqlClient.dll",
         "ref/netstandard2.0/System.Data.SqlClient.xml",
-        "ref/uap10.0.16300/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll",
         "runtimes/unix/lib/netstandard1.3/System.Data.SqlClient.dll",
         "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll",
         "runtimes/win/lib/net451/System.Data.SqlClient.dll",
         "runtimes/win/lib/net46/System.Data.SqlClient.dll",
         "runtimes/win/lib/net461/System.Data.SqlClient.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll",
         "runtimes/win/lib/netstandard1.3/System.Data.SqlClient.dll",
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/uap10.0.16300/_._",
-        "system.data.sqlclient.4.5.0-preview1-26216-02.nupkg.sha512",
+        "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.dll",
+        "system.data.sqlclient.4.5.1.nupkg.sha512",
         "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -10403,22 +10408,27 @@
         "system.runtime.nuspec"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.0-preview1-26216-02": {
-      "sha512": "YH6QzLUg6VzyejRsW9no/xlulcpKjfOC27jWmijyhw8A42ldukXHQDSaE0CP+khK0m2iqAaXoQ0BU49FUDw7Lw==",
+    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "sha512": "6zBxkHYemB0kQiHP3vGXGRXejZVoNVuMn2paUuqKKi5Wyjkxfkp+D0rd0c3VrGwotidRINt6KpOi2smL4VkJKw==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.0-preview1-26216-02",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/uap10.0.16300/_._",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.0-preview1-26216-02.nupkg.sha512",
+        "ref/uap10.0.16300/_._",
+        "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -10886,18 +10896,19 @@
         "system.runtime.serialization.xml.nuspec"
       ]
     },
-    "System.Security.AccessControl/4.5.0-preview1-26216-02": {
-      "sha512": "qyp9D+SY0lSpPcw5ZXw3xCbRtU4ZpezZv+IomYMY1EUGEC/NrOKxZJtYYNVgwHLvcZvd6qzcrLUY/lQTKCk/fw==",
+    "System.Security.AccessControl/4.5.0": {
+      "sha512": "aVjTe36YkO8FzfNhMLoPEzv3gF9rphoW9ngFhG/MH4zzEPLx07sNrgCLwMP4Wx2leI6qarMrGv21OwQXYUKLmw==",
       "type": "package",
-      "path": "system.security.accesscontrol/4.5.0-preview1-26216-02",
+      "path": "system.security.accesscontrol/4.5.0",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net46/System.Security.AccessControl.dll",
         "lib/net461/System.Security.AccessControl.dll",
         "lib/netstandard1.3/System.Security.AccessControl.dll",
         "lib/netstandard2.0/System.Security.AccessControl.dll",
-        "lib/uap10.0.16300/_._",
+        "lib/uap10.0.16299/_._",
         "ref/net46/System.Security.AccessControl.dll",
         "ref/net461/System.Security.AccessControl.dll",
         "ref/net461/System.Security.AccessControl.xml",
@@ -10914,13 +10925,13 @@
         "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
         "ref/netstandard2.0/System.Security.AccessControl.dll",
         "ref/netstandard2.0/System.Security.AccessControl.xml",
-        "ref/uap10.0.16300/_._",
+        "ref/uap10.0.16299/_._",
         "runtimes/win/lib/net46/System.Security.AccessControl.dll",
         "runtimes/win/lib/net461/System.Security.AccessControl.dll",
         "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
         "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
-        "runtimes/win/lib/uap10.0.16300/_._",
-        "system.security.accesscontrol.4.5.0-preview1-26216-02.nupkg.sha512",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.accesscontrol.4.5.0.nupkg.sha512",
         "system.security.accesscontrol.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -11311,18 +11322,19 @@
         "system.security.principal.nuspec"
       ]
     },
-    "System.Security.Principal.Windows/4.5.0-preview1-26216-02": {
-      "sha512": "FSFnv5QNuwSUgXio+n3tIvBERejx+X9RQvTNluy2odHg2dYW9tsaMf3TX/Ur8qW+RXiqftbr3NVxfab/FwozTA==",
+    "System.Security.Principal.Windows/4.5.0": {
+      "sha512": "WA9ETb/pY3BjnxKjBUHEgO59B7d/nnmjHFsqjJ2eDT780nD769CT1/bw2ia0Z6W7NqlcqokE6sKGKa6uw88XGA==",
       "type": "package",
-      "path": "system.security.principal.windows/4.5.0-preview1-26216-02",
+      "path": "system.security.principal.windows/4.5.0",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net46/System.Security.Principal.Windows.dll",
         "lib/net461/System.Security.Principal.Windows.dll",
         "lib/netstandard1.3/System.Security.Principal.Windows.dll",
         "lib/netstandard2.0/System.Security.Principal.Windows.dll",
-        "lib/uap10.0.16300/_._",
+        "lib/uap10.0.16299/_._",
         "ref/net46/System.Security.Principal.Windows.dll",
         "ref/net461/System.Security.Principal.Windows.dll",
         "ref/net461/System.Security.Principal.Windows.xml",
@@ -11339,14 +11351,14 @@
         "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
         "ref/netstandard2.0/System.Security.Principal.Windows.dll",
         "ref/netstandard2.0/System.Security.Principal.Windows.xml",
-        "ref/uap10.0.16300/_._",
+        "ref/uap10.0.16299/_._",
         "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
         "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
         "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
         "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
         "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
-        "runtimes/win/lib/uap10.0.16300/_._",
-        "system.security.principal.windows.4.5.0-preview1-26216-02.nupkg.sha512",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.4.5.0.nupkg.sha512",
         "system.security.principal.windows.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -11418,11 +11430,12 @@
         "system.text.encoding.nuspec"
       ]
     },
-    "System.Text.Encoding.CodePages/4.5.0-preview1-26216-02": {
-      "sha512": "7Q+JhgeJqHOZe0Xfj0unHSMJEivHQY1GrculQ0dITPxituCc0R+IiefsYGR1MTkyhjQW/77TonmtxRQjgf37CA==",
+    "System.Text.Encoding.CodePages/4.5.0": {
+      "sha512": "16EVkWmNnoH3/Yj9c5s5VuLK5Uv/Dnkc3P2kMmnD7wJcUuvcHVvM2IhVJanf2hHRZUitH+cIkPCPHrBoCXc7Rw==",
       "type": "package",
-      "path": "system.text.encoding.codepages/4.5.0-preview1-26216-02",
+      "path": "system.text.encoding.codepages/4.5.0",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -11458,7 +11471,7 @@
         "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "system.text.encoding.codepages.4.5.0-preview1-26216-02.nupkg.sha512",
+        "system.text.encoding.codepages.4.5.0.nupkg.sha512",
         "system.text.encoding.codepages.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"

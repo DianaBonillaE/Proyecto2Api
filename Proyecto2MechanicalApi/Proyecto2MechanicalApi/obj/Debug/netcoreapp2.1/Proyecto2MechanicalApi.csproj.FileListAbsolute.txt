@@ -12,3 +12,17 @@ C:\Users\Tito\Desktop\Proyecto2MechanicalApi\Proyecto2MechanicalApi\obj\Debug\ne
 C:\Users\Tito\Desktop\Proyecto2MechanicalApi\Proyecto2MechanicalApi\bin\Debug\netcoreapp2.1\MechanicalLibrary.dll
 C:\Users\Tito\Desktop\Proyecto2MechanicalApi\Proyecto2MechanicalApi\bin\Debug\netcoreapp2.1\MechanicalLibrary.pdb
 C:\Users\Tito\Desktop\Proyecto2MechanicalApi\Proyecto2MechanicalApi\obj\Debug\netcoreapp2.1\Proyecto2MechanicalApi.csproj.CopyComplete
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\bin\Debug\netcoreapp2.1\Proyecto2MechanicalApi.deps.json
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\bin\Debug\netcoreapp2.1\Proyecto2MechanicalApi.runtimeconfig.json
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\bin\Debug\netcoreapp2.1\Proyecto2MechanicalApi.runtimeconfig.dev.json
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\bin\Debug\netcoreapp2.1\Proyecto2MechanicalApi.dll
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\bin\Debug\netcoreapp2.1\Proyecto2MechanicalApi.pdb
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\bin\Debug\netcoreapp2.1\MechanicalLibrary.dll
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\bin\Debug\netcoreapp2.1\MechanicalLibrary.pdb
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\obj\Debug\netcoreapp2.1\Proyecto2MechanicalApi.csprojAssemblyReference.cache
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\obj\Debug\netcoreapp2.1\Proyecto2MechanicalApi.csproj.CoreCompileInputs.cache
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\obj\Debug\netcoreapp2.1\Proyecto2MechanicalApi.AssemblyInfoInputs.cache
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\obj\Debug\netcoreapp2.1\Proyecto2MechanicalApi.AssemblyInfo.cs
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\obj\Debug\netcoreapp2.1\Proyecto2MechanicalApi.csproj.CopyComplete
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\obj\Debug\netcoreapp2.1\Proyecto2MechanicalApi.dll
+C:\Users\Tito\Documents\Proyecto2Api\Proyecto2MechanicalApi\Proyecto2MechanicalApi\obj\Debug\netcoreapp2.1\Proyecto2MechanicalApi.pdb

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MechanicalLibrary.Data
 {
-   public class ProductData
+    public class ProductData
     {
 
         String connectionString;
@@ -16,7 +16,8 @@ namespace MechanicalLibrary.Data
             this.connectionString = connectionString;
         }
 
-        public void InsertarProducto(Product product) {
+        public void InsertarProducto(Product product)
+        {
             //PRIMER COMANDO
             SqlCommand cmdProduct = new SqlCommand();
             cmdProduct.CommandText = "insertarProducto";
