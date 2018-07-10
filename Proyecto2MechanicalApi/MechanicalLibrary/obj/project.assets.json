@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tito\\Desktop\\Proyecto2MechanicalApi\\MechanicalLibrary\\MechanicalLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Tito\\Documents\\Proyecto2Api\\Proyecto2MechanicalApi\\MechanicalLibrary\\MechanicalLibrary.csproj",
       "projectName": "MechanicalLibrary",
-      "projectPath": "C:\\Users\\Tito\\Desktop\\Proyecto2MechanicalApi\\MechanicalLibrary\\MechanicalLibrary.csproj",
+      "projectPath": "C:\\Users\\Tito\\Documents\\Proyecto2Api\\Proyecto2MechanicalApi\\MechanicalLibrary\\MechanicalLibrary.csproj",
       "packagesPath": "C:\\Users\\Tito\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tito\\Desktop\\Proyecto2MechanicalApi\\MechanicalLibrary\\obj\\",
+      "outputPath": "C:\\Users\\Tito\\Documents\\Proyecto2Api\\Proyecto2MechanicalApi\\MechanicalLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

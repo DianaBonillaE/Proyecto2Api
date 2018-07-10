@@ -12305,11 +12305,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tito\\Desktop\\Proyecto2MechanicalApi\\Proyecto2MechanicalApi\\Proyecto2MechanicalApi.csproj",
+      "projectUniqueName": "C:\\Users\\Tito\\Documents\\Proyecto2Api\\Proyecto2MechanicalApi\\Proyecto2MechanicalApi\\Proyecto2MechanicalApi.csproj",
       "projectName": "Proyecto2MechanicalApi",
-      "projectPath": "C:\\Users\\Tito\\Desktop\\Proyecto2MechanicalApi\\Proyecto2MechanicalApi\\Proyecto2MechanicalApi.csproj",
+      "projectPath": "C:\\Users\\Tito\\Documents\\Proyecto2Api\\Proyecto2MechanicalApi\\Proyecto2MechanicalApi\\Proyecto2MechanicalApi.csproj",
       "packagesPath": "C:\\Users\\Tito\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tito\\Desktop\\Proyecto2MechanicalApi\\Proyecto2MechanicalApi\\obj\\",
+      "outputPath": "C:\\Users\\Tito\\Documents\\Proyecto2Api\\Proyecto2MechanicalApi\\Proyecto2MechanicalApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12328,8 +12328,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Tito\\Desktop\\Proyecto2MechanicalApi\\MechanicalLibrary\\MechanicalLibrary.csproj": {
-              "projectPath": "C:\\Users\\Tito\\Desktop\\Proyecto2MechanicalApi\\MechanicalLibrary\\MechanicalLibrary.csproj"
+            "C:\\Users\\Tito\\Documents\\Proyecto2Api\\Proyecto2MechanicalApi\\MechanicalLibrary\\MechanicalLibrary.csproj": {
+              "projectPath": "C:\\Users\\Tito\\Documents\\Proyecto2Api\\Proyecto2MechanicalApi\\MechanicalLibrary\\MechanicalLibrary.csproj"
             }
           }
         }

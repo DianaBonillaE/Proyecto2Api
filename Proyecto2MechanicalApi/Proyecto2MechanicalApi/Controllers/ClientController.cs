@@ -31,10 +31,10 @@ namespace Proyecto2MechanicalApi.Controllers
         }
 
         [HttpPost]
-        public void Post([FromBody]string valor)
+        public void Post([FromBody]Client valor)
         {
             ClientData clientData = new ClientData(configuration.GetConnectionString("MechanicalContext").ToString());
-            //clientData.Insertar(valor);
+            clientData.Insertar(valor);
             
         }
     }
