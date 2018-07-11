@@ -17,7 +17,7 @@ namespace MechanicalLibrary.Data
         }
 
 
-        public IList<WorkOrder> GetWorkOrders(int id)
+        public IList<WorkOrder> GetWorkOrders()
         {
 
             IList<WorkOrder> lista;
